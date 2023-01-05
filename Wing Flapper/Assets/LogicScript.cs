@@ -9,12 +9,15 @@ public class LogicScript : MonoBehaviour
     public int playerScore;
     public Text scoreText;
     public GameObject gameOverScreen;
+    private AudioSource audioSrc;
 
     [ContextMenu("Increase Score")]
     public void addScore(int scoreToAdd)
     {
         playerScore = playerScore + scoreToAdd;
         scoreText.text = playerScore.ToString();
+        audioSrc = GetComponent<AudioSource>();
+        audioSrc.Play();
     }
 
     public void restartGame()
