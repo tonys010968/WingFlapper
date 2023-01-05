@@ -559,6 +559,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 970869819}
   flapStrength: 20
+  logic: {fileID: 0}
+  birdIsAlive: 1
 --- !u!1 &1485285750
 GameObject:
   m_ObjectHideFlags: 0
