@@ -78,6 +78,12 @@ public class LogicScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void resetHighScore()
+    {
+        PlayerPrefs.SetInt("highScore", 0);
+        PlayerPrefs.Save();
+    }
+
     public void gameOver()
     {
         Debug.Log("Game is over. playerScore = " + playerScore.ToString());
